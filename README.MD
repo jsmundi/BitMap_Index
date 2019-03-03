@@ -5,6 +5,7 @@
 The program creates a sorted and unsorted bitmap index from a data file containing information about pets. Once the bitmap is created compress it using WAH 32 bit and 64 bit words. 
 
 ### Data 
+Sample instance from the data file.
 
 | Animal      | Age         | Adopted       |
 | :---        |    :----:   |          ---: |
@@ -41,3 +42,27 @@ Run the command
     python3 bitIndex.py
 ```
 All the output is written to output folder. 
+
+### Directory Tree
+```
+.
+├── README.MD
+├── bitIndex.py
+├── data
+│   ├── animals.txt
+│   ├── animals_compressed_32.txt
+│   ├── animals_compressed_sorted_32.txt
+│   ├── animals_test.txt
+│   ├── animals_test_bitmap.txt
+│   ├── animals_test_bitmap_sorted.txt
+│   └── animals_test_sorted.txt
+└── output
+    ├── animals_bitMap_sorted.txt
+    ├── animals_bitMap_unsorted.txt
+    ├── animals_bitmap.txt
+    ├── animals_compressed_64.txt
+    ├── animals_compressed_sorted_64.txt
+    ├── animals_sorted.txt
+    ├── animals_sorted_compressed_32.txt
+    └── animals_unsorted_compressed_32.txt
+```
