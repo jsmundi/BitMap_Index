@@ -1,4 +1,0 @@
-cat,78,False
-turtle,89,False
-turtle,18,False
-bird,38,False
