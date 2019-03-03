@@ -183,14 +183,14 @@ def main():
     sortedBitMap = "./output/animals_bitmap_sorted.txt"
     sortedAnimals = "./output/animals_sorted.txt"
 
-    unsortedAnimals = "./data/animals_test.txt"
+    unsortedAnimals = "./data/animals.txt"
     unsortedBitMap = "./output/animals_bitmap.txt"
 
     sortedWAH32 = "./output/animals_compressed_sorted_32.txt"
     unsortedWAH32 = "./output/animals_compressed_32.txt"
 
-    sortedWAH32 = "./output/animals_compressed_sorted_64.txt"
-    unsortedWAH32 = "./output/animals_compressed_64.txt"
+    sortedWAH64 = "./output/animals_compressed_sorted_64.txt"
+    unsortedWAH64 = "./output/animals_compressed_64.txt"
 
     # Create bit map on unsorted file
     createBitMap(unsortedAnimals, unsortedBitMap)
@@ -206,8 +206,8 @@ def main():
     compression(unsortedBitMap, unsortedWAH32, 32)
 
     # Compress sorted and unsorted using 64 WAH
-    compression(sortedBitMap, sortedWAH32, 64)
-    compression(unsortedBitMap, unsortedWAH32, 64)
+    compression(sortedBitMap, sortedWAH64, 64)
+    compression(unsortedBitMap, unsortedWAH64, 64)
 
 
 if __name__ == "__main__":
